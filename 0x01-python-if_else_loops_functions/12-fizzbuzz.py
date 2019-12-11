@@ -1,7 +1,6 @@
 #!/usr/bin/phyton3
 def fizzbuzz():
-    fizz_num = 1
-    while fizz_num <= 100:
+    for fizz_num in range(1, 101):
         if (fizz_num % 5) == 0 and (fizz_num % 3) == 0:
             print('FizzBuzz', end=' ')
         elif (fizz_num % 3) == 0:
@@ -9,5 +8,4 @@ def fizzbuzz():
         elif (fizz_num % 5) == 0:
             print('Buzz', end=' ')
         else:
-            print(fizz_num, end=' ')
-        fizz_num += 1
+            print('{:d}'.format(fizz_num), end=' ')
