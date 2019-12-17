@@ -2,5 +2,7 @@
 def no_c(my_string):
     if my_string:
         str = ''
-        str += s.translate({ord(i): None for i in 'cC'})
+        for letter in my_string:
+            if letter != 'c' and letter != 'C':
+                str += letter
         return str
