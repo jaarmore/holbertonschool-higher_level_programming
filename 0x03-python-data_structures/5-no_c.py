@@ -6,3 +6,5 @@ def no_c(my_string):
             if letter != 'c' and letter != 'C':
                 str += letter
         return str
+    else:
+        return ''
