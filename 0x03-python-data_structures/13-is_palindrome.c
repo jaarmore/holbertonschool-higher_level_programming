@@ -6,19 +6,19 @@
 */
 int is_palindrome(listint_t **head)
 {
-	listint_t *node_aux = *head;
-	int sum = 0;
+	listint_t *node_aux = (*head);
+	int sum_nodes = 0;
 
-	if (*head == NULL)
+	if ((*head) == NULL)
 		return (1);
 
-	while (node_aux->next != NULL)
+	while (node_aux != NULL)
 	{
-		sum += node_aux->n;
+		sum_nodes += node_aux->n;
 		node_aux = node_aux->next;
 	}
 
-	if ((sum % 2) == 0)
+	if ((sum_nodes % 2) == 0)
 		return (1);
 	else
 		return (0);
