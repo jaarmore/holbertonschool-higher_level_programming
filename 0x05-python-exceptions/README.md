@@ -39,4 +39,4 @@ Function that raises a name exception with a message.
 
 
 ### AUTHOR
-** Jackson Moreno **
+**Jackson Moreno**
