@@ -2,11 +2,7 @@ class Square:
     """class Square that defines a Square"""
 
     def __init_(self, size=0):
-        """Defines de first element of the object.
-
-        Args:
-            size: size of the square
-        """
+        """check if the size of square is an integer."""
         if isinstance(size, int):
             if size < 0:
                 raise ValueError('size must be >= 0')
