@@ -7,6 +7,7 @@ class Square():
     def __init__(self, size=0, position=(0, 0)):
         """check if the size of square is an integer."""
         self.__size = size
+        self.__position = position
 
     def area(self):
         """Return the area of square"""
@@ -28,20 +29,34 @@ class Square():
         else:
             raise TypeError('size must be an integer')
 
+    @property
+    def position(self):
+        """Retrieved the value of position"""
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        """Set the value of position"""
+        if isinstance(value, tuple) and len(value) != 2 and
+        isinstance(value[0], int) and isinstance(value[1], int) and
+        value[0] >= 0 and value[1] >= 0:
+                self.__position = value
+        else:
+            raise TypeError('position must be a tuple of 2 positive integers')
+
     def my_print(self):
         """Prints the square with char # on stdout"""
         if self.__size == 0:
             print()
         else:
-            for fil in range(self.__size):
-                for col in range(self.__size):
-                    print('#', end='')
+            if self.__position:
+                for i in range(self.__position[1]):
+                    print()
+                for j in range(self.__size):
+                    print(' ' * self.__position[0], end='')
+                    print('#' * self.__size)
+            else:
+                for fil in range(self.__size):
+                    for col in range(self.__size):
+                        print('#', end='')
                 print()
-
-    def position(self):
-        """Retieve the position"""
-        pass
-
-    def position(self, value):
-        """Set the value to position"""
-        pass
