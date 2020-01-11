@@ -15,7 +15,7 @@ class Square():
 
     @property
     def size(self):
-        """Retrieved the value of size"""
+        """Return the value of size"""
         return self.__size
 
     @size.setter
@@ -31,7 +31,7 @@ class Square():
 
     @property
     def position(self):
-        """Retrieved the value of position"""
+        """Return the value of position"""
         return self.__position
 
     @position.setter
@@ -49,7 +49,7 @@ class Square():
         if self.__size == 0:
             print()
         else:
-            if self.__position:
+            if (self.__position):
                 for x in range(self.__position[1]):
                     print()
                 for x in range(self.__size):
