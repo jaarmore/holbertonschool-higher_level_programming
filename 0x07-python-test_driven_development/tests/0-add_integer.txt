@@ -1,0 +1,48 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+First import ``add_integer`` from the ``add_integer`` module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Add two int numbers with one negative number
+    >>> add_integer(-2, 4)
+    2
+
+Add two positive numbers
+    >>> add_integer(3, 9)
+    12
+
+Add two float numbers
+    >>> add_integer(93.5, 90.6)
+    183
+
+Add two float numbers with one negative number
+    >>> add_integer(-10.3, 5)
+    -5
+
+Add with no parameter
+    >>> add_integer()
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Add with a string on parameter
+    >>> add_integer('add', 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+Add with a character on parameter
+    >>> add_integer(10, 'H')
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+Add with a list as parameter
+    >>> add_integer(5, [20, 2])
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
