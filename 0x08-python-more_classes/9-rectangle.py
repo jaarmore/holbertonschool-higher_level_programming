@@ -119,24 +119,10 @@ class Rectangle():
         elif rect_1.area() >= rect_2.area():
             return rect_1
 
-    @staticmethod
-    def bigger_or_equal(rect_1, rect_2):
-        """
-        Static method that returns the biggest rectangle based on the area
-
-        Args:
-            rect_1: first object Rectangle
-            rect_2: second object Rectangle
-
-        Returns:
-            The biggest rectangle based on the area.
-
-        """
-        if not isinstance(rect_1, Rectangle):
-            raise TypeError("rect_1 must be an instance of Rectangle")
-        if not isinstance(rect_2, Rectangle):
-            raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_1.area() < rect_2.area():
-            return rect_2
-        elif rect_1.area() >= rect_2.area():
-            return rect_1
+    @classmethod
+    def square(cls, size=0):
+    """
+    Class method that returns a new Rectangle instance
+    with width == height == size.
+    """
+    return cls(size, size)
