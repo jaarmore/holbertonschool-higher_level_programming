@@ -69,7 +69,7 @@ class Square(Rectangle):
     """
     Class Square
     """
-    def __init_(self, size):
+    def __init__(self, size):
         """
         initializes values of size
 
