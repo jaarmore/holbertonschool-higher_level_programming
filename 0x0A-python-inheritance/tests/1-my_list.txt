@@ -1,4 +1,15 @@
->>> MyList = __import__('1-my_list').MyList
+The ``1-my_list`` module
+========================
+
+This is a text file test the above module.
+
+Using ``MyList``
+----------------
+
+First import ``MyList`` from the ``1-my_list`` module:
+    >>> MyList = __import__('1-my_list').MyList
+
+
 >>> my_list = MyList()
 >>> print(my_list)
 []
