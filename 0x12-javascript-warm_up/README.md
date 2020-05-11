@@ -1,4 +1,5 @@
 # 0x12. Javascript - Warm up
+[![js-semistandard-style](https://cdn.rawgit.com/standard/semistandard/master/badge.svg)](https://github.com/standard/semistandard)
 
 
 Javascript is used for many things. At Holberton School, you will use Javascript for 2 reasons:
