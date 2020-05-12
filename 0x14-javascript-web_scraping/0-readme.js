@@ -1,7 +1,5 @@
 #!/usr/bin/node
-/*
- * Script that reads and prints the content of a file.
- */
+// Script that reads and prints the content of a file.
 const args = process.argv;
 const fs = require('fs');
 
